@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/bootstrap.min.css") }} ">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/main.css") }} ">
+    <title>{% block title %} {% endblock %}-Profiservis</title>
+  </head>
+  <body>
+	  {% block body %} {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src='{{ url_for("static", filename="js/jquery.min.js") }}'></script>
+    <script src='{{ url_for("static", filename="js/bootstrap.min.js") }}'></script>
+    <script src='{{ url_for("static", filename="js/main.js") }}'></script>
+  </body>
+</html>
